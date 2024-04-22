@@ -13,7 +13,6 @@ export const ThemeProvider: React.FC<Props> = ({ children }): JSX.Element => {
   const toggleTheme = (): void => {
     const val = theme === "light" ? "dark" : "light";
     setTheme(val);
-    console.log(`${val} teste`)
     localStorage.setItem("ui.theme", val);
   };
 
