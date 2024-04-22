@@ -7,14 +7,14 @@ import './App.css'
 function App() {
 
     const { theme } = useContext(ThemeContext);
-
+    const themeName = theme == 'light' ? 'light' : 'dark'
   return (
-    <main className={theme == 'light' ? 'light' : 'dark'}>
+    <div className={`${themeName} bg-inverseSurface`}>      
       <h1 className="text-3xl font-bold underline text-primary">
       Hello world!
       </h1>
       <ToggleThemeButton />
-    </ main>
+    </ div>
   )
 }
 
